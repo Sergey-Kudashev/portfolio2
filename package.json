@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sergey-Kudashev/portfolio2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sergey-Kudashev/portfolio2/issues"
+  },
+  "homepage": "https://github.com/Sergey-Kudashev/portfolio2#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
