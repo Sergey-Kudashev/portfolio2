@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="toDoListStyles.css">
+</head>
+<body>
+    <div class="input-block">
+        <div>
+            <input type="text" id="input-text" placeholder="Write your text" aria-autocomplete="list">
+        </div>
+       <div class="buttons">
+        <button data-add-button id="add-button">ADD</button>
+       </div>
+    </div>
+    <div>
+        <ul data-list class="current-list"></ul>
+    </div>
+</body>
+<script src="toDoListScript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
