@@ -133,7 +133,8 @@ function setPosition(track, position) {
 
 document.addEventListener('DOMContentLoaded', (event) => {
     setTimeout(function(){
-        changeItem(aboutBlock, aboutBlockTitle, "300px", "0%")
+        aboutBlock.classList.toggle('main-introduce-size-active')
+        aboutBlockTitle.style.marginLeft = "0"
         creatingName(aboutBlockTitle, "name-of-first-block")
         forWidth(descriptionLine, "98%")
         forOpacity(aboutParagraph)
@@ -151,7 +152,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         boringInformation.classList.remove('class-for-opacity')
     }, 1500)
     setTimeout(function(){
-        changeItem(projectsBlock, projectsBlockTitle, "620px", "70%")
+        projectsBlock.classList.toggle('about-projects-size-active')
+        projectsBlockTitle.style.marginLeft = "70%"
         creatingName(projectsBlockTitle, "name-of-second-block")
         forOpacity(firstImagesBlock)
         forOpacity(landingParagraph)
