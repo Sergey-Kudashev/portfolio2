@@ -10,7 +10,7 @@
 body {
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 173vh;
+    min-height: 1100px;
     max-height: max-content;
     background: linear-gradient(100deg, rgb(107, 107, 107), rgb(48, 48, 48));
 }
@@ -63,15 +63,20 @@ body {
     margin-left: 58%;
 }
 
+.block-width {
+    width: 80%;
+    transition: 1s;
+}
+
 .third-block-title {
     margin-left: 0;
-    width: 88%;
     border-radius: 10px;
     transition: 1s;
 }
 
-.third-block-title.active {
-    opacity: 1;
+.third-block-title-active {
+    margin-left: 62%;
+    width: 30%;
 }
 
 .name-of-first-block, .name-of-second-block, .name-of-third-block {

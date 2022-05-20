@@ -100,8 +100,8 @@ function thirdBlockTransition() {
         setTimeout(function(){
             thirdBlock.style.opacity = "1"
             setTimeout(function(){
-                thirdBlockTitle.style.width = "28%"
-                thirdBlockTitle.style.marginLeft = "60%"
+                thirdBlockTitle.classList.remove("block-width")
+                thirdBlockTitle.classList.toggle("third-block-title-active")
                 creatingName(thirdBlockTitle, "name-of-third-block")
                 setTimeout(function(){
                     thirdBlockTitle.style.marginLeft = "0"

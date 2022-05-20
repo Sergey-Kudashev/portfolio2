@@ -1,0 +1,60 @@
+@media (min-width: 1340px) and (max-width: 1440px) {
+    #first-block, #second-block, #third-block {
+        margin: 27px 10% 0 10%;
+    }
+
+    .first-block-title, .third-block-title-active {
+        margin-left: 56%;
+        width: 24%;
+    }
+
+    .boring-paragraph-active {
+        font-size: 15px;
+    }
+
+    .scroll-pase-third-block, #first-block > .scroll-pase {
+        width: 62%;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1540px) {
+    #first-block, #second-block, #third-block {
+        margin: 27px 10% 0 10%;
+    }
+    
+    .first-block-title, .third-block-title-active {
+        margin-left: 55%;
+        width: 25%;
+    }
+
+    .boring-paragraph-active {
+        font-size: 16px;
+    }
+
+    .scroll-pase-third-block, #first-block > .scroll-pase {
+        width: 62%;
+    }
+}
+
+@media (min-width: 1541px) {
+    #first-block, #second-block, #third-block {
+        margin: 27px 12vw 0 12vw;
+    }
+
+    .first-block-title, .third-block-title-active {
+        margin-left: 53vw;
+        width: 23vw;
+    }
+
+    .block-width {
+        width: 76vw;
+    }
+
+    .boring-paragraph-active {
+        font-size: 17px;
+    }
+
+    .scroll-pase-third-block, #first-block > .scroll-pase {
+        width: 58vw;
+    }
+}
