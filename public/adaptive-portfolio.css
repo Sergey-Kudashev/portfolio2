@@ -50,12 +50,8 @@
         height: 240px;
         transform: translateY(-17px);
     }
-    
-    .name-of-first-block::before, .name-of-second-block::before, .name-of-third-block::before {
-        padding-top: 10px;
-    }
 
-    .first-block-title {
+    .first-block-title, .second-block-title, .third-block-title {
         display: flex;
         justify-content: center;
         align-items: center;

@@ -602,6 +602,12 @@ body {
     transition: 0.5s;
 }
 
+.first-block-title, .second-block-title, .third-block-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .my-photo {
     transition: 0.5s;
 }
