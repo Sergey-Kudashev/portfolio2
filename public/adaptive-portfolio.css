@@ -13,6 +13,11 @@
         padding-top: 5px;
     }
 
+    .name-of-third-block, .name-of-third-block::before, .third-block-title, .third-block-title-active {
+        display: flex;
+        align-items: flex-start;
+    }
+
     .name-of-first-block, .name-of-second-block, .name-of-third-block {
         padding: 7px 5px;
     }
@@ -129,7 +134,7 @@
     }
 
     .boring-paragraph-active {
-        transform: translate(-90px, -15px);
+        transform: translate(-93px, -15px);
         grid-template-rows: 80px;
         font-size: 6px;
         column-gap: 0px;
