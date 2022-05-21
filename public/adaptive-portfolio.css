@@ -15,7 +15,7 @@
 
     .name-of-third-block, .name-of-third-block::before, .third-block-title, .third-block-title-active {
         display: flex;
-        align-items: flex-start;
+        align-items: flex-end;
     }
 
     .name-of-first-block, .name-of-second-block, .name-of-third-block {
