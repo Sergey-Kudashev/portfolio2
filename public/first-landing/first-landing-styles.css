@@ -1,10 +1,17 @@
-*, ::before, ::after {
+*, ::before, ::after, body {
     margin: 0;
     padding: 0;
     font-family: 'Bebas Neue';
     line-height: 140%;
     letter-spacing: 1.5px;
     color: white;
+}
+
+.first-main-block {
+    padding-top: 40px;
+    height: 800px;
+    background: url(landing-images/main-screen__bgc.png);
+    background-size: cover;
 }
 
 ::-webkit-scrollbar {
@@ -16,15 +23,16 @@ body {
 }
 
 nav {
-    margin: 40px 80px;
+    margin: 0px 80px;
     display: flex;
     justify-content: space-between;
+    transform: translateY(40px);
 }
 
 .nav-info {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -35,7 +43,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10vw;
     padding: 10px 30px;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
     border-radius: 50px;
@@ -69,7 +76,7 @@ nav {
     transform: scale(120%);
 }
 
-.main-screen > img {
+/* .main-screen > img {
     max-width: 1600px;
     min-width: 1200px;
     position: absolute;
@@ -77,7 +84,7 @@ nav {
     left: 0px;
     top: 0px;
     z-index: -1;
-}
+} */
 
 .about-course {
     font-style: normal;
@@ -113,13 +120,16 @@ nav {
 }
 
 .statistic {
-    min-width: 1200px;
-    max-width: 1600px;
     width: 100%;
     height: 130px;
     background-color: #121212;
+}
+
+.under-first-main-block {
+    position: sticky;
+    width: 100%;
+    height: 130px;
     position: absolute;
-    top: max(600px, 50vw);
     display: grid;
     grid-template-columns: 200px 250px 500px;
     gap: 81px;
@@ -127,7 +137,7 @@ nav {
     align-items: center;
 }
 
-.statistic > button {
+.under-first-main-block > button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,7 +152,7 @@ nav {
     transition: 0.5s;
 }
 
-.statistic > button:hover {
+.under-first-main-block > button:hover {
     transform: scale(120%);
     letter-spacing: 5px;
 }
@@ -701,4 +711,41 @@ nav {
     transform: scale(120%);
     color: black;
     background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 1040px) and (max-width: 1299px) {
+    .first-block, .about-course, .who-are-we, .second-main-block, .third-main-block, .fourth-main-block, .fifth-main-block, .seventh-block, .last-block, .under-first-main-block {
+        transform: scale(80%);
+    }
+
+    .first-block, .about-course {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1039px) {
+    .first-block, .about-course, .who-are-we, .second-main-block, .third-main-block, .fourth-main-block, .fifth-main-block, .seventh-block, .last-block, .under-first-main-block {
+        transform: scale(60%);
+    }
+
+    .first-main-block {
+        height: 600px;
+    }
+
+    nav {
+        transform: scale(80%);
+        margin-left: 0px;
+    }
+
+    .nav-btn {
+        margin-right: 30px;
+    }
+
+    .nav-info {
+        font-size: 13px;
+    }
+
+    .first-block, .about-course {
+        margin-left: 0px;
+    }
 }
