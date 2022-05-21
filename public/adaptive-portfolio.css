@@ -5,7 +5,8 @@
 
     .name-of-first-block, .name-of-second-block, .name-of-third-block, #about-paragraph, #landing-paragraph, #js-paragraph {
         font-size: 10px;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
+        padding-top: 5px;
     }
 
     .name-of-first-block, .name-of-second-block, .name-of-third-block {
@@ -46,7 +47,7 @@
     }
     
     .about-projects-size-active {
-        height: 225px;
+        height: 240px;
         transform: translateY(-17px);
     }
     
