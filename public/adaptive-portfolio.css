@@ -180,11 +180,7 @@
         width: 96%;
     }
 
-    .scroll-pase-third-block {
-        width: 85%;
-    }
-
-    #first-block > .scroll-pase {
+    #first-block > .scroll-pase, .scroll-pase-third-block {
         width: 75%;
     }
 
