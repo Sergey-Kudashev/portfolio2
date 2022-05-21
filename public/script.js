@@ -205,16 +205,6 @@ const Visible = function (target) {
 };
 
 
-// window.addEventListener('scroll', function() {
-//   Visible (element);
-// });
-
-// setTimeout(function(){
-//     Visible (element)
-// }, 3000)
-
-
-
 linkButton(instagramButton, "https://www.instagram.com/kudashev_s_/")
 linkButton(telegramButton, "https://t.me/kudashev_s")
 linkButton(gitHub, "https://github.com/Sergey-Kudashev")
@@ -316,7 +306,7 @@ if (screen.width < 800) {
     })
 }
 
-if (screen.width < 800) {
+if (screen.width < 580) {
     boringInformation.addEventListener('click', e => {
             document.querySelector(".my-photo").classList.toggle('display-none')
     })

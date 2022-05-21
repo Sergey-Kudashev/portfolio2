@@ -1,8 +1,4 @@
 @media (min-width: 300px) and (max-width: 579px) {
-    body {
-        min-height: 97vh;
-    }
-
     #about-projects > .about-block-description {
         margin-top: 0px;
     }
@@ -190,10 +186,6 @@
 }
 
 @media (min-width: 580px) and (max-width: 799px) {
-    body {
-        min-height: 720px;
-    }
-
     #main_introduce, #about-projects {
         border-radius: 7px;
     }
@@ -327,10 +319,27 @@
 }
 
 @media (min-width: 800px) and (max-width: 999px) {
-    body {
-        min-height: 900px;
+    .project-desc {
+        font-size: 20px;
     }
-    
+
+    .project-desc > button {
+        font-size: 20px;
+        width: 80px;
+        height: 30px;
+        margin-top: 5px;
+    }
+
+    .project-desc > span {
+        font-size: 13px;
+        padding: 0px 2px;
+    }
+
+    .project-desc > button:hover {
+        width: 110px;
+        border: 20px;
+    }
+
     .f-slider-item > img, .slider-item > img, .f-slider-item, .slider-item, .project-desc {
         height: 120px;
         width: 120px;
@@ -377,8 +386,8 @@
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
-    body {
-        min-height: 1000px;
+    .project-desc > button {
+        margin-top: 5px;
     }
 
     .f-slider-item > img, .slider-item > img, .f-slider-item, .slider-item, .project-desc {

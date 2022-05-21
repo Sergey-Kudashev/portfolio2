@@ -3,14 +3,10 @@
     padding: 0;
 }
 
-/* html, body {
-    height: 100%;
-} */
-
 body {
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 1100px;
+    min-height: 97vh;
     max-height: max-content;
     background: linear-gradient(100deg, rgb(107, 107, 107), rgb(48, 48, 48));
 }
@@ -121,7 +117,6 @@ body {
 }
 
 #main_introduce, #about-projects {
-    /* display: inline-block; */
     position: relative;
     background-color: lightgray ;
     margin-top: 33px;
