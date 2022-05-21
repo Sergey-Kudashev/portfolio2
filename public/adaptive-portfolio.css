@@ -1,6 +1,10 @@
 @media (min-width: 300px) and (max-width: 579px) {
     body {
-        height: device-height;
+        min-height: 97vh;
+    }
+
+    #about-projects > .about-block-description {
+        margin-top: 0px;
     }
 
     .name-of-first-block, .name-of-second-block, .name-of-third-block, #about-paragraph, #landing-paragraph, #js-paragraph {
@@ -47,14 +51,12 @@
     }
     
     .about-projects-size-active {
-        height: 240px;
+        height: 225px;
         transform: translateY(-17px);
     }
 
-    .first-block-title, .second-block-title, .third-block-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    #landing-line, #js-line {
+        height: 1px;
     }
 
     .f-slider-item > img, .slider-item > img, .f-slider-item, .slider-item, .project-desc {
@@ -127,7 +129,7 @@
     }
 
     .boring-paragraph-active {
-        transform: translate(-90px, -20px);
+        transform: translate(-90px, -15px);
         grid-template-rows: 80px;
         font-size: 6px;
         column-gap: 0px;
