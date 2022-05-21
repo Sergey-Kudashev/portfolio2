@@ -85,7 +85,6 @@ body {
     color: rgb(70, 70, 70);
     margin-top: -10px;
     transition: opacity 0.5s;
-    /* will-change: opacity; */
 }
 
 .name-of-third-block::before {
@@ -590,10 +589,19 @@ body {
 }
 
 .unselectable {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
+}
+
+.display-none {
+    font-size: 0px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.about-me-paragraph {
+    transition: 0.5s;
+}
+
+.my-photo {
+    transition: 0.5s;
 }

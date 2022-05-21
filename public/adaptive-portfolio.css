@@ -1,24 +1,272 @@
-@media (min-width: 600px) and (max-width: 799px) {
+@media (min-width: 300px) and (max-width: 579px) {
     body {
-        min-height: 900px;
+        height: device-height;
+    }
+
+    .name-of-first-block, .name-of-second-block, .name-of-third-block, #about-paragraph, #landing-paragraph, #js-paragraph {
+        font-size: 10px;
+        padding-bottom: 5px;
+    }
+
+    .name-of-first-block, .name-of-second-block, .name-of-third-block {
+        padding: 7px 5px;
+    }
+
+    .first-block-title, .second-block-title {
+        height: 25px;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    #second-block {
+        margin-top: 5px;
+    }
+
+    .third-block-title {
+        height: 25px;
+        border-radius: 5px;
+        height: 20px;
+    }
+
+    #third-block {
+        display: flex;
+        justify-content: center;
+    }
+
+    .scroll-pase-third-block {
+        transform: translateY(0px);
+    }
+
+    .scroll-pase {
+        transform: translateY(-7px);
+    }
+
+    .main-introduce-size-active {
+        height: 300px; 
+        transform: translateY(-17px);
+    }
+    
+    .about-projects-size-active {
+        height: 225px;
+        transform: translateY(-17px);
     }
     
     .f-slider-item > img, .slider-item > img, .f-slider-item, .slider-item, .project-desc {
-        height: 120px;
-        width: 120px;
+        height: 50px;
+        width: 50px;
+        border-radius: 5px;
+    }
+
+    .project-desc {
+        font-size: 10px;
+    }
+
+    .project-desc > span {
+        display: none;
+    }
+
+    .project-desc > button {
+        font-size: 10px;
+        width: 40px;
+        height: 17px;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+
+    .project-desc > button:hover {
+        width: 45px;
+        border: 5px;
+    }
+
+    .left-arrow > img, .right-arrow > img, .second-right-arrow > img, .second-left-arrow > img {
+        width: 20px;
+        height: 20px;
     }
 
     .about-me > p {
-        font-size: 15px;
+        font-size: 9px;
+        padding-right: 10px;
+        transform: translatey(-8px);
     }
 
-    .about-projects-size-active {
-        height: 500px;
+    #image-block > img {
+        height: 100px;
+        border-radius: 5px;
+    }
+
+    #image-block {
+        height: 100%;
+        width: 120px;
+    }
+
+    #main_introduce, #about-projects {
+        border-radius: 5px;
+    }
+
+    .main-introduce-size-active {
+        height: 110px;
+    }
+
+    .boring-information {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        position: absolute;
+        transform: translate(-10px, 110px);
+        width: 40%;
+        height: 10px;
+        box-shadow: none;
+        font-size: 8px;
     }
 
     .boring-paragraph-active {
-        transform: translate(10px, 50px);
-        font-size: 9px;
+        transform: translate(-90px, -20px);
+        grid-template-rows: 80px;
+        font-size: 6px;
+        column-gap: 0px;
+    }
+
+    .boring-information > img { 
+        display: none;
+    }
+
+    .boring-information-active {
+        height: 0px;
+    }
+
+    .contacts > img {
+        width: 20px;
+        height: 20px;
+        border-radius: 7px;
+        margin-right: 10px;
+    }
+    
+    .images-block {
+        margin: 8px 0%;
+    }
+
+    #first-block {
+        margin: 16px 2% 0 2%;
+    }
+
+    #second-block {
+        margin: 0px 2% 0 2%;
+    }
+
+    #third-block {
+        margin: -30px 2% 0 2%
+    }
+    
+    .first-block-title, .third-block-title-active {
+        margin-left: 66%;
+        width: 30%;
+    }
+
+    .block-width {
+        width: 96%;
+    }
+
+    .scroll-pase-third-block {
+        width: 85%;
+    }
+
+    #first-block > .scroll-pase {
+        width: 75%;
+    }
+
+    .scroll-pase, .scroll-pase-third-block {
+        height: 2px;
+    }
+}
+
+@media (min-width: 580px) and (max-width: 799px) {
+    body {
+        min-height: 720px;
+    }
+
+    #main_introduce, #about-projects {
+        border-radius: 7px;
+    }
+
+    .name-of-first-block, .name-of-second-block, .name-of-third-block, #about-paragraph, #landing-paragraph, #js-paragraph {
+        font-size: 20px;
+    }
+
+    .first-block-title, .second-block-title {
+        height: 35px;
+        border-radius: 7px 7px 0px 0px;
+    }
+
+    #second-block {
+        margin-top: 15px;
+    }
+
+    .third-block-title {
+        height: 35px;
+        border-radius: 7px;
+    }
+
+    #third-block {
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+    }
+
+    .scroll-pase-third-block {
+        transform: translateY(9px);
+    }
+
+    .scroll-pase {
+        transform: translateY(-5px);
+    }
+
+    .main-introduce-size-active {
+        height: 300px;
+        transform: translateY(-10px);
+    }
+    
+    .about-projects-size-active {
+        height: 600px;
+        transform: translateY(-10px);
+    }
+    
+    .f-slider-item > img, .slider-item > img, .f-slider-item, .slider-item, .project-desc {
+        height: 90px;
+        width: 90px;
+        border-radius: 7px;
+    }
+
+    .project-desc {
+        font-size: 15px;
+    }
+
+    .project-desc > span {
+        display: none;
+    }
+
+    .project-desc > button {
+        font-size: 15px;
+        width: 60px;
+        height: 22px;
+        border-radius: 7px;
+    }
+
+    .project-desc > button:hover {
+        width: 80px;
+        border: 10px;
+    }
+
+    .left-arrow > img, .right-arrow > img, .second-right-arrow > img, .second-left-arrow > img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .about-me > p {
+        font-size: 12px;
+    }
+
+    .about-projects-size-active {
+        height: 400px;
     }
 
     #image-block > img {
@@ -27,24 +275,44 @@
 
     #image-block {
         height: 100%;
-        width: 220px;
+        width: 185px;
     }
 
     .main-introduce-size-active {
-        height: 200px;
+        height: 175px;
     }
 
     .boring-information {
-        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        position: absolute;
+        transform: translate(-10px, 170px);
+        width: 40%;
+        box-shadow: none;
+        font-size: 10px;
+    }
+
+    .boring-paragraph-active {
+        transform: translate(-70px, -25px);
+        grid-template-rows: 80px;
+        font-size: 7px;
+        column-gap: 3px;
+    }
+
+    .boring-information > img { 
+        display: none;
     }
 
     .boring-information-active {
-        height: 70px;
+        height: 0px;
     }
 
     .contacts > img {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
+        border-radius: 7px;
     }
 }
 
@@ -154,6 +422,10 @@
         width: 24%;
     }
 
+    .block-width {
+        width: 80%;
+    }
+
     .boring-paragraph-active {
         transform: translateY(20px);
         font-size: 15px;
@@ -172,6 +444,10 @@
     .first-block-title, .third-block-title-active {
         margin-left: 55%;
         width: 25%;
+    }
+
+    .block-width {
+        width: 80%;
     }
 
     .boring-paragraph-active {
@@ -199,6 +475,10 @@
 
     .boring-paragraph-active {
         font-size: 17px;
+    }
+
+    .block-width {
+        width: 76%;
     }
 
     .scroll-pase-third-block, #first-block > .scroll-pase {

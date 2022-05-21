@@ -309,6 +309,19 @@ boringInformation.addEventListener('click', e => {
     boringText.classList.toggle('boring-text-active')
 })
 
+if (screen.width < 800) {
+    boringText.classList.add('rainbow-word')
+    boringInformation.addEventListener('click', e => {
+            document.querySelector(".about-me-paragraph").classList.toggle('display-none')
+    })
+}
+
+if (screen.width < 800) {
+    boringInformation.addEventListener('click', e => {
+            document.querySelector(".my-photo").classList.toggle('display-none')
+    })
+}
+
 setTimeout(function() {
     window.scrollTo(0, 0)
 }, 100)
