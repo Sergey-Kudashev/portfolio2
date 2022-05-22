@@ -1,0 +1,130 @@
+*, ::after, ::before {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+canvas, .score {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 2px solid black;
+    border-radius: 0 0 5px 5px;
+}
+
+body, .difficulty {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.all-game {
+    display: grid;
+    grid-template-columns: 200px 256px 220px;
+}
+
+.easy-diff, .normal-diff, .hard-diff {
+    width: 130px;
+    padding: 2px 0px;
+    border-radius: 5px;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.active-button {
+    width: 180px;
+    border: 2px solid rgb(94, 0, 0);
+    background-color: rgb(94, 0, 0);
+    color: white;
+}
+
+.button-block > p {
+    font-size: 15px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.difficulty {
+    width: 200px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 256px;
+    height: 50px;
+    border-bottom: 0px;
+    border-radius: 5px 5px 0 0;
+}
+
+.arrows {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(2, 60px);
+    gap: 2px;
+}
+
+.key-up, .key-down, .key-left, .key-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid black;
+  }
+  
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid black;
+}
+  
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid black;
+}  
+  
+.arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent; 
+    border-right:8px solid black;
+}
+
+.tutorial {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 320px;
+    opacity: 0.6;
+    transition: 5s;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.tutorial > p {
+    text-align: center;
+}

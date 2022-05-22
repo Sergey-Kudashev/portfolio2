@@ -268,6 +268,7 @@ checkBtns(firstLeftArrow, firstRightArrow, firstPosition, firstItemsCount, first
 const toDoListButton = document.querySelector(".to-do-list-project-button")
 const calculatorButton = document.querySelector(".calculator-project-button")
 const firstLanding = document.querySelector(".first-landing-project-button")
+const theSnakeGame = document.querySelector(".snake-project-button")
 
 function projectOpenButton (projectButton, linkToProject) {
     projectButton.addEventListener("click", e => {
@@ -275,6 +276,7 @@ function projectOpenButton (projectButton, linkToProject) {
     })
 }
 
+projectOpenButton(theSnakeGame, "TheSnake/snake-game.html")
 projectOpenButton(toDoListButton, "toDoListProject/toDoList.html")
 projectOpenButton(calculatorButton, "calculatorProject/calculator.html")
 projectOpenButton(firstLanding, "first-landing/first-landing.html")

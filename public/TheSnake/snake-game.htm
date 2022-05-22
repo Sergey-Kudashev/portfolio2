@@ -5,9 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="snake-styles.css">
 </head>
 <body>
+    <div class="all-game">
+        <div class="difficulty">
+            <div class="button-block"><button class="easy-diff">EASY</button>
+                <p>Snake speed : Slow<br>
+                    Rock: No</p>
+            </div>
+            <div class="button-block"><button class="normal-diff">NORMAL</button>
+                <p>Snake speed : Normal<br>
+                    Rock: No</p>
+            </div>
+            <div class="button-block"><button class="hard-diff">HARD</button>
+                <p>Snake speed : Fast<br>
+                Rock: Yes</p>
+            </div>
+        </div>
+        <div class="the-game">
+            <div class="score">
+                <p>Score: <div class="score-number">0</div></p>
+                <p>Best score: <div class="best-score-number">0</div></p>
+            </div>
+            <div class="snake">
+                <canvas id="canvas" height="320px" width="256px"></canvas>
+            </div>
+        </div>
+        <div class="tutorial">
+            <p>Use arrows to play!</p>
+            <div class="arrows">
+                <div></div>
+                <div class="key-up"><div class="arrow-up"></div></div>
+                <div></div>
+                <div class="key-left"><div class="arrow-left"></div></div>
+                <div class="key-down"><div class="arrow-down"></div></div>
+                <div class="key-right"><div class="arrow-right"></div></div>
+            </div>
+        </div>
+    </div>
     
 
     <script src="snake-script.js"></script>
