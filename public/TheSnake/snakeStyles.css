@@ -19,6 +19,10 @@ body, .difficulty {
     justify-content: center;
 }
 
+body {
+    height: 97vh;
+}
+
 .all-game {
     display: grid;
     grid-template-columns: 200px 256px 220px;
