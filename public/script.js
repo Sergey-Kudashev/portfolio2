@@ -35,6 +35,10 @@ const facebook = document.querySelector(".facebook")
 const twitter = document.querySelector(".twitter")
 const gmail = document.querySelector(".gmail")
 
+facebook.addEventListener('click', () => {
+    alert(`Sorry i can't log in my facebook account`)
+})
+
 // first slider
 let firstPosition = 0;
 const firstSlidesToShow = 4
@@ -208,7 +212,7 @@ const Visible = function (target) {
 linkButton(instagramButton, "https://www.instagram.com/kudashev_s_/")
 linkButton(telegramButton, "https://t.me/kudashev_s")
 linkButton(gitHub, "https://github.com/Sergey-Kudashev")
-linkButton(facebook, "#")
+// linkButton(facebook, "#")
 linkButton(twitter, "https://twitter.com/Kudashev_")
 linkButton(gmail, "https://mail.google.com/mail/u/0/?tab=mm#inbox?compose=GTvVlcSDZcmBkVvMLHXtSJcWXNJbZKdgCrBrQwfTZlKzBVbzqzszLPFFQRfZhxCNsXkJbSwhWdJfn")
 
