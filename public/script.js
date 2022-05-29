@@ -273,6 +273,7 @@ const toDoListButton = document.querySelector(".to-do-list-project-button")
 const calculatorButton = document.querySelector(".calculator-project-button")
 const firstLanding = document.querySelector(".first-landing-project-button")
 const theSnakeGame = document.querySelector(".snake-project-button")
+const secondLanding = document.querySelector(".second-landing-project-button")
 
 function projectOpenButton (projectButton, linkToProject) {
     projectButton.addEventListener("click", e => {
@@ -284,6 +285,7 @@ projectOpenButton(theSnakeGame, "TheSnake/snakeGame.html")
 projectOpenButton(toDoListButton, "toDoListProject/toDoList.html")
 projectOpenButton(calculatorButton, "calculatorProject/calculator.html")
 projectOpenButton(firstLanding, "first-landing/first-landing.html")
+projectOpenButton(secondLanding, "second-landing/second-landing.html")
 
 const boringInformation = document.querySelector(".boring-information")
 const boringParagraph = document.querySelector(".boring-paragraph")

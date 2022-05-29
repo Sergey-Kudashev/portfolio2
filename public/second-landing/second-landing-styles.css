@@ -1,0 +1,508 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+    letter-spacing: 0.2px;
+}
+
+body {
+    background-color: #252B42;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.first-block-wrapper {
+    width: 100%;
+    height: 730px;
+    background: url(second-landing-images/background.png);
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    margin-left: 4%;
+    margin-right: 4%;
+    height: 105px;
+    width: 92%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 9%;
+}
+
+.navigation, .navigation-btns, .navigation-images {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-btns > div {
+    margin-right: 21px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    transition: 0.5s;
+}
+
+.navigation-btns > div:hover {
+    cursor: pointer;
+    transform: scale(120%);
+    transition: 0.5s;
+}
+
+.navigation-images > div {
+    margin-left: 18px;
+}
+
+.navigation-images > div > img {
+    transition: 0.5s;
+}
+
+.navigation-images > div > img:hover {
+    cursor: pointer;
+    transform: scale(120%);
+    transition: 0.5s;
+}
+
+.first-block-text {
+    margin-top: 9%;
+    text-align: center;
+}
+
+.first-block-text > h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+}
+
+.first-block-text > p {
+    margin-top: 3%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.first-block-btns {
+    margin-top: 4%;
+}
+
+.button {
+    padding: 10px 36px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    border-radius: 37px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #FFFFFF;
+    transition: 0.5s;
+}
+
+.orange-button {
+    background: #FFA62B;
+    border: 0;
+}
+
+.button:hover {
+    padding: 10px 46px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.first-block-btns > .orange-button {
+    margin-right: 10px;
+}
+
+.first-block-information {
+    display: grid;
+    grid-template-columns: repeat(4, 230px);
+    align-items: center;
+    justify-content: center;
+    margin: 0 13.5% 120px 13.5%;
+    width: 73%;
+    height: 120px;
+    background-color: #FFFFFF;
+    transform: translateY(-37px);
+    justify-content: space-between;
+}
+
+.box-wrapper {
+    display: grid;
+    grid-template-columns: 83px 147px;
+    align-items: center;
+}
+
+.box-image {
+    margin: 0 15px 0 20px;
+}
+
+.box-text > span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.box-text > p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.cards {
+    margin: 0px 13.5% 0 13.5%;
+    width: 73%;
+    height: 290px;
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 40px 0 35px 40px;
+}
+
+.card > h3 {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.card > p {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #737373;
+}
+
+.card > button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: 1px solid #00A0C1;
+    border-radius: 37px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #00A0C1;
+    display: flex;
+    align-items: center;
+}
+
+.card > button > img {
+    width: 0;
+    transition: 0.5s;
+}
+
+.card:hover {
+    background-color: #00A0C1;
+}
+
+.card:hover > p, .card:hover > h3 {
+    color: #FFFFFF;
+}
+
+.card:hover > .card-image > img {
+    filter: brightness(0) invert(1);
+}
+
+.card, .card > p, .card > h3, .card > .card-image > img, .card:hover, .card:hover > p, .card:hover > h3, .card:hover > .card-image > img {
+    transition: 0.5s;
+}
+
+.card > button:hover > img {
+    width: 15px;
+    margin-left: 5px;
+    transition: 0.5s;
+}
+
+.card > button:hover {
+    cursor: pointer;
+}
+
+.second-block {
+        margin-top: 205px;
+}
+
+.second-block-text {
+    text-align: center;
+}
+
+.second-block-text > h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+}
+
+.second-block-text > p {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.video-block {
+    margin: 100px 13.5% 0 13.5%;
+    width: 73%;
+    display: grid;
+    grid-template-columns: 600px 340px;
+    justify-content: space-between;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play {
+    width: 40px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.video:hover > .play {
+    width: 100px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.about-video {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-video > h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+}
+
+.about-video > p {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.about-video-wrapper {
+    margin-top: 50px;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 52px 278px;
+    margin-bottom: 30px;
+}
+
+.grid-wrapper > div > p { 
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.grid-wrapper > div > span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.third-block {
+    width: 100%;
+    height: 580px;
+    margin-top: 100px;
+    background-color: #16697A;
+    padding-top: 80px;
+}
+
+.third-block-text-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.third-block-text {
+    width: 470px;
+    text-align: center;
+}
+
+.third-block-text > h4 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+}
+
+.third-block-text > p {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.customer-card {
+    display: flex;
+    margin: 0 44px;
+    width: 494px;
+    height: 300px;
+    background-color: #FFFFFF;
+}
+
+.customer-card > img {
+    width: 96px;
+    height: 96px;
+    transform: translate(-64px, 28px);
+}
+
+.customer-card-text { 
+    transform: translateX(-36px);
+}
+
+.customer-card-text > h6 {
+    margin-top: 30px;
+    color: #252B42;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+
+.customer-card-text > p {
+    color: #737373;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.stars {
+    margin: 15px 0;
+}
+
+.slider {
+    margin-top: 90px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    align-items: center;
+}
+
+.slider-track:hover {
+    animation-play-state: paused;
+}
+
+.slider-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc((538px * 6));
+    display: flex;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-538px  * 3));
+    }
+}
+
+.fourth-block {
+    margin-top: 80px;
+}
+
+.fourth-block-text {
+    width: 100%;
+    text-align: center;
+}
+
+.fourth-block-text > h5 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+}
+
+.fourth-block-text > p {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.consultants-card {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 45px;
+}
+
+.consultants-card:hover {
+    background-color: #FFFFFF;
+}
+
+.consultants-card:hover > p {
+    color: #737373;
+}
+
+.consultants-card > span {
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFA62B;
+}
+
+.consultants-card > h5 {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.fifth-block {
+    margin: 200px 13.5% 0 13.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fifth-block-text {
+    width: 456px;
+}
+
+.fifth-block-text > h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+}
+
+.fifth-block-text > p {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
