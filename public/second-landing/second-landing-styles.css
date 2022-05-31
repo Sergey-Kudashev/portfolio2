@@ -727,7 +727,7 @@ color: #BDBDBD;
     }
 
     .first-block-wrapper {
-        background: url(/public/second-landing/second-landing-images/background-mobile.png);
+        background: url(second-landing-images/background-mobile.png);
         height: 1767px;
         width: 100%;
     }
