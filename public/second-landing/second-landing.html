@@ -16,17 +16,19 @@
             <div class="logo">Nasscorp</div>
             <div class="navigation">
                 <div class="navigation-btns">
-                    <div>Home</div>
-                    <div>Product</div>
-                    <div>Pricing</div>
-                    <div>Content</div>
+                    <div class="home-btn">Home</div>
+                    <div class="product-btn">Product</div>
+                    <div class="pricing-btn">Pricing</div>
+                    <div class="content-btn">Content</div>
                 </div>
                 <div class="navigation-images">
                     <div><img src="second-landing-images/icn search .icn-xs.png" alt=""></div>
                     <div><img src="second-landing-images/btn.png" alt=""></div>
+                    <div class="burger"><img src="second-landing-images/icn menu .icn-xs.png" alt=""></div>
                 </div>
             </div>
         </nav>
+        <div class="burger-menu"></div>
         <div class="first-block-text">
             <h1>Drive More Customers<br>Through Digital</h1>
             <p>We know how large objects will act, but things on a<br>small scale just do not act that way</p>
@@ -41,7 +43,7 @@
             <div class="box-image"><img src="second-landing-images/icn settings .icn-lg.png" alt=""></div>
             <div class="box-text">
                 <span>1.5K</span>
-                <p>HAPPE<br>CUSTOMERS</p>
+                <p>HAPPY<br>CUSTOMERS</p>
             </div>
         </div>
         <div class="box-wrapper">
@@ -358,9 +360,42 @@
         </div>
     </footer>
     <script>
+        const burgerMenu = document.querySelector('.burger-menu')
+        const burger = document.querySelector('.burger')
+        const homeBtn = document.querySelector('.home-btn')
+        const productBtn = document.querySelector('.product-btn')
+        const pricingBtn = document.querySelector('.pricing-btn')
+        const contentBtn = document.querySelector('.content-btn')
+        let i = 0;
+
         function myFunction() {
             window.open('https://www.figma.com/file/opop7Xvg0twIrwUMz5ghUS/Nasscorp---Figma-Corporate-Dark-Freebies-(Community)?node-id=964%3A16733')
         }
+
+        burger.addEventListener("click", () => {
+            if (i === 0) {
+            burgerMenu.classList.toggle('burger-menu-active-display')
+            i = 1
+            setTimeout(function() {
+                burgerMenu.classList.toggle('burger-menu-active')
+                burger.style.transform = "scaleX(-1)"
+            }, 1)
+            homeBtn.classList.toggle('normal-btn')
+            setTimeout(function() { productBtn.classList.toggle('normal-btn') }, 100)
+            setTimeout(function() { pricingBtn.classList.toggle('normal-btn') }, 200)    
+            setTimeout(function() { contentBtn.classList.toggle('normal-btn') }, 300)                
+        } else if (i === 1) {
+            setTimeout(function() { burgerMenu.classList.toggle('burger-menu-active') }, 100)
+            burger.style.transform = "scaleX(1)"
+            i = 0
+            homeBtn.classList.toggle('normal-btn')
+            productBtn.classList.toggle('normal-btn')
+            pricingBtn.classList.toggle('normal-btn')
+            contentBtn.classList.toggle('normal-btn')
+            setTimeout(function() { burgerMenu.classList.toggle('burger-menu-active-display') }, 600)
+        }
+        })
+    
     </script>
 </body>
 </html>
