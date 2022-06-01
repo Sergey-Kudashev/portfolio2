@@ -851,11 +851,27 @@ color: #BDBDBD;
         flex-direction: column;
         margin: 0;
         align-items: center;
+        margin-top: 100px;
     }
 
     .video {
         width: 300px;
         justify-content: center;
+    }
 
+    .about-video > h3 {
+        margin: 73px 11% 0 11%;
+    }
+
+    .about-video > p {
+        margin: 10px 11% 0 11%;
+    }
+
+    .about-video-wrapper {
+        margin: 50px 11% 0 11%;
+    }
+
+    .grid-wrapper {
+        grid-template-columns: 19% 80%;
     }
 }
