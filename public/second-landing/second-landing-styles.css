@@ -350,6 +350,9 @@ nav {
     font-weight: 700;
     font-size: 40px;
     line-height: 57px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .third-block-text > p {
@@ -528,6 +531,9 @@ nav {
 
 .quote-form > h3 {
     margin-top: 40px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-weight: 700;
     font-size: 40px;
     line-height: 57px;
@@ -695,6 +701,10 @@ color: #BDBDBD;
         width: 100%;
     }
 
+    .button {
+        padding: 10px 45px;
+    }
+
     .burger {
         display: block;
         transition: 0.5s;
@@ -839,10 +849,6 @@ color: #BDBDBD;
         overflow: hidden;
         background: url(second-landing-images/media\ bg-cover-mobile.png);
         width: 100%;
-    }
-
-    .video-images > img {
-        display: none;
     }
 
     .video-block {
