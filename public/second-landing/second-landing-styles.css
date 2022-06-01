@@ -874,4 +874,54 @@ color: #BDBDBD;
     .grid-wrapper {
         grid-template-columns: 19% 80%;
     }
+
+    .third-block-text > p, .fourth-block-text > h5, .fourth-block-text > p {
+        margin-left: 11%;
+        margin-right: 11%;
+    }
+
+    .third-block {
+        height: 780px;
+    }
+
+    .customer-card {
+        width: 300px;
+        height: 408px;
+    }
+
+    .slider-track {
+        width: calc((388px * 7));
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-388px  * 3));
+        }
+    }
+
+    .fourth-block-cards > .cards {
+        margin-top: 445px;
+    }
+
+    .consultants-card {
+        margin-top: 0;
+    }
+
+    .fifth-block {
+        margin-top: 795px;
+        flex-direction: column;
+    }
+
+    .fifth-block-text > h2, .fifth-block-text > p {
+        padding: 0 20%;
+    }
+
+    .fifth-block-image > img {
+        width: 100%;
+        height: auto;
+        margin-top: 130px;
+    }
 }
