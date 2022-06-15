@@ -214,9 +214,18 @@ linkButton(telegramButton, "https://t.me/kudashev_s")
 linkButton(gitHub, "https://github.com/Sergey-Kudashev")
 // linkButton(facebook, "#")
 linkButton(twitter, "https://twitter.com/Kudashev_")
-linkButton(gmail, "https://mail.google.com/mail/u/0/?tab=mm#inbox?compose=GTvVlcSDZcmBkVvMLHXtSJcWXNJbZKdgCrBrQwfTZlKzBVbzqzszLPFFQRfZhxCNsXkJbSwhWdJfn")
+// linkButton(gmail, "https://mail.google.com/mail/u/0/?tab=mm#inbox?compose=GTvVlcSDZcmBkVvMLHXtSJcWXNJbZKdgCrBrQwfTZlKzBVbzqzszLPFFQRfZhxCNsXkJbSwhWdJfn")
+// mailTo(gmail, "dossxxx0389@gmail.com")
 
+// function mailTo (networkButton, mail) {
+//     networkButton.addEventListener('click', () => {
+//         window.open.href = "mailto:" + mail
+//     })
+// }
 
+gmail.addEventListener('click', () => {
+    window.location.href = ("mailto:dossxxx0389@gmail.com?subject=subject&body=body")
+})
 
 secondItems.forEach((item) => {
     item.style.minWidth = `${secondItemWidth}px`
@@ -274,6 +283,7 @@ const calculatorButton = document.querySelector(".calculator-project-button")
 const firstLanding = document.querySelector(".first-landing-project-button")
 const theSnakeGame = document.querySelector(".snake-project-button")
 const secondLanding = document.querySelector(".second-landing-project-button")
+const onlineStore = document.querySelector(".online-store-project-button")
 
 function projectOpenButton (projectButton, linkToProject) {
     projectButton.addEventListener("click", e => {
@@ -286,6 +296,7 @@ projectOpenButton(toDoListButton, "toDoListProject/toDoList.html")
 projectOpenButton(calculatorButton, "calculatorProject/calculator.html")
 projectOpenButton(firstLanding, "first-landing/first-landing.html")
 projectOpenButton(secondLanding, "second-landing/second-landing.html")
+// projectOpenButton(onlineStore, "")
 
 const boringInformation = document.querySelector(".boring-information")
 const boringParagraph = document.querySelector(".boring-paragraph")
