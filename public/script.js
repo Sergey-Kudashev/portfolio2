@@ -224,7 +224,7 @@ linkButton(twitter, "https://twitter.com/Kudashev_")
 // }
 
 gmail.addEventListener('click', () => {
-    window.location.href = ("mailto:dossxxx0389@gmail.com?subject=subject&body=body")
+    window.location.href = ("mailto:dossxxx0389@gmail.com?subject=Employment&body=Hi there!")
 })
 
 secondItems.forEach((item) => {
