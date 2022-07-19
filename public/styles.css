@@ -190,6 +190,10 @@ body {
     transition-delay: 1s;
 }
 
+.about-me > p {
+    font-size: 2vw;
+}
+
 #image-block {
     display: flex;
     justify-content: center;
@@ -332,16 +336,16 @@ body {
       width: 45px;
   }
 
-  .instagram, .telegram, .github, .facebook {
+  .instagram, .telegram, .github, .linkedin {
     opacity: 0;
   }
 
-  .instagram, .telegram, .github, .facebook, .twitter, .gmail {
+  .instagram, .telegram, .github, .linkedin, .twitter, .gmail {
       transition: all ease-in 0.3s;
       border-radius: 13px;
   }
 
-  .instagram:hover, .telegram:hover, .github:hover, .facebook:hover, .twitter:hover, .gmail:hover {
+  .instagram:hover, .telegram:hover, .github:hover, .linkedin:hover, .twitter:hover, .gmail:hover {
       cursor: pointer;
       transform: scale(120%);
   }

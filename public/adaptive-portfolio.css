@@ -39,7 +39,7 @@
     }
 
     .scroll-pase-third-block {
-        transform: translateY(0px);
+        transform: translateY(4px);
     }
 
     .scroll-pase {
@@ -191,7 +191,15 @@
     }
 
     .name-of-first-block, .name-of-second-block, .name-of-third-block, #about-paragraph, #landing-paragraph, #js-paragraph {
-        font-size: 20px;
+        font-size: 17px;
+    }
+
+    #about-paragraph, #landing-paragraph, #js-paragraph {
+        margin-bottom: 10px;
+    }
+
+    .name-of-third-block {
+        transform: translateY(15px);
     }
 
     .first-block-title, .second-block-title {
@@ -227,11 +235,6 @@
         transform: translateY(-10px);
     }
     
-    .about-projects-size-active {
-        height: 600px;
-        transform: translateY(-10px);
-    }
-    
     .f-slider-item > img, .slider-item > img, .f-slider-item, .slider-item, .project-desc {
         height: 90px;
         width: 90px;
@@ -263,12 +266,9 @@
         height: 50px;
     }
 
-    .about-me > p {
-        font-size: 12px;
-    }
-
     .about-projects-size-active {
-        height: 400px;
+        height: 350px;
+        transform: translateY(-10px);
     }
 
     #image-block > img {
@@ -330,6 +330,14 @@
         margin-top: 5px;
     }
 
+    #about-paragraph, #landing-paragraph, #js-paragraph {
+        margin-bottom: 10px;
+    }
+
+    .name-of-third-block {
+        transform: translateY(15px);
+    }
+
     .project-desc > span {
         font-size: 13px;
         padding: 0px 2px;
@@ -345,12 +353,8 @@
         width: 120px;
     }
 
-    .about-me > p {
-        font-size: 15px;
-    }
-
     .about-projects-size-active {
-        height: 500px;
+        height: 430px;
     }
 
     .boring-paragraph-active {
@@ -390,13 +394,17 @@
         margin-top: 5px;
     }
 
+    #about-paragraph, #landing-paragraph, #js-paragraph {
+        margin-bottom: 10px;
+    }
+
+    .name-of-third-block {
+        transform: translateY(15px);
+    }
+
     .f-slider-item > img, .slider-item > img, .f-slider-item, .slider-item, .project-desc {
         height: 150px;
         width: 150px;
-    }
-
-    .about-me > p {
-        font-size: 19px;
     }
 
     .about-projects-size-active {

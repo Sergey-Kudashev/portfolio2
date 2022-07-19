@@ -31,13 +31,9 @@ const thirdBlock = document.querySelector('#third-block')
 const instagramButton = document.querySelector(".instagram")
 const telegramButton = document.querySelector(".telegram")
 const gitHub = document.querySelector(".github")
-const facebook = document.querySelector(".facebook")
+const linkedin = document.querySelector(".linkedin")
 const twitter = document.querySelector(".twitter")
 const gmail = document.querySelector(".gmail")
-
-facebook.addEventListener('click', () => {
-    alert(`Sorry i can't log in my facebook account`)
-})
 
 // first slider
 let firstPosition = 0;
@@ -110,7 +106,7 @@ function thirdBlockTransition() {
                 setTimeout(function(){
                     thirdBlockTitle.style.marginLeft = "0"
                     setTimeout(function(){
-                        forOpacity(facebook)
+                        forOpacity(linkedin)
                         forOpacity(gitHub)
                         setTimeout(function(){
                             forOpacity(telegramButton)
@@ -212,7 +208,7 @@ const Visible = function (target) {
 linkButton(instagramButton, "https://www.instagram.com/kudashev_s_/")
 linkButton(telegramButton, "https://t.me/kudashev_s")
 linkButton(gitHub, "https://github.com/Sergey-Kudashev")
-// linkButton(facebook, "#")
+linkButton(linkedin, "https://www.linkedin.com/in/serhii-kudashev-914350245/")
 linkButton(twitter, "https://twitter.com/Kudashev_")
 // linkButton(gmail, "https://mail.google.com/mail/u/0/?tab=mm#inbox?compose=GTvVlcSDZcmBkVvMLHXtSJcWXNJbZKdgCrBrQwfTZlKzBVbzqzszLPFFQRfZhxCNsXkJbSwhWdJfn")
 // mailTo(gmail, "dossxxx0389@gmail.com")
