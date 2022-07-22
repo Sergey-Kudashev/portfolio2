@@ -8,7 +8,9 @@ body {
     background-attachment: fixed;
     min-height: 97vh;
     max-height: max-content;
-    background: linear-gradient(100deg, rgb(107, 107, 107), rgb(48, 48, 48));
+    /* background: linear-gradient(100deg, rgb(107, 107, 107), rgb(48, 48, 48)); */
+    background-color: #ff4e00;
+background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
 }
 
 #first-block, #second-block, #third-block {
@@ -41,7 +43,7 @@ body {
     position: absolute;
     width: 30%;
     height: 45px;
-    background-color: lightgray;
+    background-color: white;
     border-radius: 10px 10px 0 0;
     transition: 0.8s ease;
     transition-delay: 1s;
@@ -68,6 +70,7 @@ body {
     margin-left: 0;
     border-radius: 10px;
     transition: 1s;
+    align-items: center;
 }
 
 .third-block-title-active {
@@ -75,11 +78,18 @@ body {
     width: 30%;
 }
 
-.name-of-first-block, .name-of-second-block, .name-of-third-block {
+.name-of-first-block, .name-of-second-block {
     font-family: 'Bungee', cursive;
     font-size: 25px;
     color: rgb(70, 70, 70);
     margin-top: -10px;
+    transition: opacity 0.5s;
+}
+
+.name-of-third-block {
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    color: rgb(70, 70, 70);
     transition: opacity 0.5s;
 }
 
@@ -118,7 +128,7 @@ body {
 
 #main_introduce, #about-projects {
     position: relative;
-    background-color: lightgray ;
+    background-color: white ;
     margin-top: 33px;
     border-radius: 10px;
     transition: 0.8s ease;
@@ -159,6 +169,7 @@ body {
     transition-delay: 1s;
     margin-right: 2%;
     margin-left: 2%;
+    margin-bottom: 10px;
 }
 
 #description-line, #landing-line, #js-line {
@@ -215,7 +226,7 @@ body {
     position: absolute;
     width: 70%;
     height: 3px;
-    background: linear-gradient(100deg, rgb(104, 104, 104), rgb(158, 158, 158));
+    background: black;
     margin: 16px 10% 5% 10%;
     z-index: -1;
     border-radius: 10px;
@@ -416,7 +427,7 @@ body {
 
 .project-desc > button:hover {
     width: 140px;
-    color: lightgray;
+    color: white;
     background-color: rgb(50, 50, 50);
     border: 20px solid rgb(50, 50, 50);
 }
@@ -452,7 +463,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: lightgray;
+    background-color: white;
     border-radius: 0 0 10px 10px;
     font-size: 15px;
     position: sticky;
@@ -494,7 +505,7 @@ body {
 
 .boring-information-active {
     transition: 0.5s;
-    background-color: lightgray;
+    background-color: white;
     border-radius: 0 0 10px 10px;
     display: flex;
     justify-content: space-around;

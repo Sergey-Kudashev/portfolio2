@@ -22,13 +22,12 @@ class Calculator {
     }
 
     chooseOperation(operation) {
-        this.currentOperand = operation
         if (this.currentOperand === '') return
         if (this.topBlock !== '') {
             this.compute()
         }
         this.operation = operation
-        this.topBlock = this.currentOperand
+        this.topBlock = this.currentOperand + " " + operation
         this.currentOperand = ''
     }
 
@@ -76,6 +75,11 @@ const calculator = new Calculator(topBlockTextElement, currentOperandTextElement
 
 allClearButton.addEventListener('click', () => {
     calculator.clear()
+    calculator.updateDisplay()
+})
+
+deleteButton.addEventListener('click', () => {
+    calculator.delete()
     calculator.updateDisplay()
 })
 
