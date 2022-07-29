@@ -290,7 +290,7 @@ function projectOpenButton (projectButton, linkToProject) {
 projectOpenButton(theSnakeGame, "TheSnake/snakeGame.html")
 projectOpenButton(toDoListButton, "toDoListProject/toDoList.html")
 projectOpenButton(calculatorButton, "calculatorProject/calculator.html")
-projectOpenButton(firstLanding, "first-landing/index.html")
+projectOpenButton(firstLanding, "first-landing/first-landing.html")
 projectOpenButton(secondLanding, "second-landing/second-landing.html")
 // projectOpenButton(onlineStore, "")
 
